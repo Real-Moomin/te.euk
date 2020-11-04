@@ -1,0 +1,98 @@
+*{margin: 0px; padding: 0px; font-family: "TTFirsExtraBold";}
+*::selection{background: rgba(0,0,0,0);}
+li{list-style: none;}
+body{background-color: #F45813; background-image: url("src/grid.svg");}
+a:link{color:#000; text-decoration: none;}
+a:visited{color:#000; text-decoration: none;}
+a:hover{color:#33f}
+
+.cell{border-color: #000; }
+.cr{border-right: 3px solid #000; background-color: #fff} .cl{border-left: 3px solid #000; background-color: #fff} .ct{border-top: 3px solid #000; background-color: #fff} .cb{border-bottom: 3px solid #000; background-color: #fff}
+
+.invisible{visibility: hidden;}
+.visible{visibility: visible;}
+.selected{color:#33f !important}
+
+#container{width: 720px; height: 720px; margin-bottom: 40px; top: 40px; position: absolute; left: calc(50vw - 360px); overflow: hidden;}
+
+#cellTitle{width: 10000px; height: 120px; background-color: #000; overflow: hidden;}
+  #cellTitle .wrapper{position: relative;}
+  #cellTitle img{display: inline-block; margin : 16px; height: 88px;}
+  #cellTitle img::selection{background: rgba(0,0,0,0);}
+
+
+#cellNavigate{height: 120px; box-sizing: border-box; padding: 8px 16px 8px 16px; font-size: 28px; line-height: 24px; word-break: break-all;background-color: #F6B400;}
+  #cellNavigate::selection{background: rgba(0,0,0,0);}
+  #cellNavigate li{display: inline; height: 28px;}
+  #cellNavigate li:hover{color: #33f; cursor: pointer;}
+  #cellNavigate li::selection{background: rgba(0,0,0,0);}
+    #cellNavigate img{display: inline-block; height: 28px; position: relative; top: 3px; margin-left: 2px; margin-right: -2px;}
+    #cellNavigate img::selection{background: rgba(0,0,0,0);}
+  #cellNavigate img:hover{cursor: pointer;}
+
+
+
+#cellSide{height: 420px; float: left; width: 280px; background-color: #DCA6C3}
+
+#cellContents{height: 420px; background-color: #7DB720; overflow-y: scroll;}
+#cellContents::selection{color: #fff; background:rgba(0,0,0,.99);}
+  .content{ box-sizing: border-box; padding: 12px 16px 8px 16px; font-size: 18px; text-align: center; }
+  .content::selection{color: #fff; background: rgba(0,0,0,.99);}
+  .arrow{display: inline-block; height: 16px; width: 16px; position: relative; top: 1px;}
+  .star{background-image: url("src/star.svg"); background-size:cover; width: 153px; height: 54px; display:inline-block; color: #fff; box-sizing: border-box; padding-top: 16px; margin-bottom: 6px; margin-top: 2px;}
+  .star:hover{cursor: default;}
+  .figure{display: inline-block; height: 16px; position: relative; top: 1px; margin-left: 2px;}
+  .content .arrow:hover{cursor: text;}
+
+
+#cellControl{height: 60px; background-color: #fff;}
+
+#backdrop{position: fixed; width: 100vw; height: 100vh; background-color: #000; opacity: 0.6;}
+
+
+
+.link{
+  border: solid 3px #000;
+  position: fixed;
+  right: 48px;
+  padding: 16px 32px 14px 32px;
+  box-sizing: border-box;
+  -moz-border-radius: 50% / 50%;
+  -webkit-border-radius: 50% / 50%;
+  border-radius: 50% / 50%;
+  background-color: #fff;
+  box-shadow: 8px 8px #000;
+  width: 165px;
+  text-align: center;
+}
+#link_1{bottom: 40px;}
+#link_2{bottom: 110px;}
+
+.link:hover{cursor: pointer; box-shadow: 8px 8px #33f; color: #33f; border-color: #33f;}
+
+@font-face {
+  font-family:"TTFirsExtraBold";
+  src: url("src/TTFirsExtraBold.woff2");
+}
+.marquee {
+  overflow: hidden;
+  -webkit-animation: marquee 9s linear infinite;
+  animation: marquee 9s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    left: 0
+  }
+  to {
+    left: -1610px
+  }
+}
+
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}

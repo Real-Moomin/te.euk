@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="85px" height="85px" viewBox="0 0 85 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Grid</title>
+    <g id="Grid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <line x1="42.5" y1="0" x2="42.5" y2="85" id="Path" stroke="#000000"></line>
+        <line x1="42.5" y1="-1.91686944e-15" x2="42.5" y2="85" id="Path" stroke="#000000" transform="translate(42.500000, 42.500000) scale(-1, 1) rotate(-90.000000) translate(-42.500000, -42.500000) "></line>
+    </g>
+</svg>
