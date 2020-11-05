@@ -72,7 +72,13 @@ a:hover{color:#33f}
 
 @font-face {
   font-family:"TTFirsExtraBold";
-  src: url("src/TTFirsExtraBold.woff2");
+  src:url('src/TTFirsExtraBold.eot');
+  src:url('src/TTFirsExtraBold.eot?#iefix')format('embedded-opentype'),
+  url('src/TTFirsExtraBold.svg') format('svg'),
+  url('src/TTFirsExtraBold.woff') format('woff'),
+  url('src/TTFirsExtraBold.ttf') format('truetype');
+
+
 }
 .marquee {
   overflow: hidden;
