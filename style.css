@@ -1,4 +1,8 @@
-*{margin: 0px; padding: 0px; font-family: "TTFirsExtraBold";}
+*{margin: 0px; padding: 0px; font-family: "TTFirsExtraBold";  -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */}
+*::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/}
+
 *::selection{background: rgba(0,0,0,0);}
 li{list-style: none;}
 body{background-color: #F45813; background-image: url("src/grid.svg");}
