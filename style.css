@@ -71,19 +71,19 @@ a:hover{color:#33f}
 .link:hover{cursor: pointer; box-shadow: 8px 8px #33f; color: #33f; border-color: #33f;}
 
 @font-face {
-  font-family:"TTFirsExtraBold";
-  src:url('src/TTFirsExtraBold.eot');
-  src:url('src/TTFirsExtraBold.eot?#iefix')format('embedded-opentype'),
-  url('src/TTFirsExtraBold.svg') format('svg'),
-  url('src/TTFirsExtraBold.woff') format('woff'),
-  url('src/TTFirsExtraBold.ttf') format('truetype');
+  font-family:"TTFirsExtrabold";
+  src:url('src/TTFirsExtrabold.eot');
+  src:url('src/TTFirsExtrabold.eot?#iefix')format('embedded-opentype'),
+  url('src/TTFirsExtrabold.svg') format('svg'),
+  url('src/TTFirsExtrabold.woff') format('woff'),
+  url('src/TTFirsExtrabold.ttf') format('truetype');
 
 
 }
 .marquee {
   overflow: hidden;
-  -webkit-animation: marquee 9s linear infinite;
-  animation: marquee 9s linear infinite;
+  -webkit-animation: marquee 8s linear infinite;
+  animation: marquee 8s linear infinite;
 }
 
 @keyframes marquee {
@@ -91,7 +91,7 @@ a:hover{color:#33f}
     left: 0
   }
   to {
-    left: -1610px
+    left: -1509px
   }
 }
 
